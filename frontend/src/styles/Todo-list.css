@@ -1,0 +1,22 @@
+.todo-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.todo-list ul li {
+  padding: 5px 0;
+  background-color: #FFEFD5;
+  position: relative;
+}
+
+.todo-list ul li.completed {
+  background-color: #FFF9F0;
+  text-decoration:line-through;
+  color: #80786B;
+}
+
+.todo-list ul li p {
+  padding: 0 40px 0 0;
+  color: #797165;
+}

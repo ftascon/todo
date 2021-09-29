@@ -1,0 +1,39 @@
+
+### CREATE task
+POST http://127.0.0.1:5000/tasks
+Content-Type: application/json
+
+{
+    "content": "Lorem ipsum dolor"
+}
+
+
+### GET ONE tasks
+GET http://127.0.0.1:5000/tasks/10
+
+
+### EDIT task
+PUT http://127.0.0.1:5000/tasks/15
+Content-Type: application/json
+
+{
+    "content": "asd asd asd asd asd asd asd asda sda sdas das dasd asd asd asd asda sd asd",
+    "completed": "1"
+}
+
+
+### DELETE ONE tasks
+DELETE http://127.0.0.1:5000/tasks/23
+
+
+### GET LIST of tasks
+GET http://127.0.0.1:5000/tasks
+
+
+### MARK AS COMPLETED of tasks
+POST http://127.0.0.1:5000/tasks/complete
+Content-Type: application/json
+
+{
+    "id": "1"
+}
